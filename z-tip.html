@@ -1,3 +1,1 @@
-<div z-data={tip:''} :text=tip
- @mouseover.document=tip=this&&(this.title||this.closest('[title]')&&this.closest('[title]').title)||''
-></div>
+<div z-data @mouseover.document=$el.innerText=this&&(this.title||(this.closest('[title]')||{}).title)||''></div>
