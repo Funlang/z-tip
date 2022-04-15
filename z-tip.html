@@ -1,1 +1,1 @@
-<div z-data @mouseover.document=$el.textContent=this&&(this.title||(this.closest('[title]')||{}).title)||''></div>
+<div z-data @mouseover.document=$el.textContent=event.target&&(event.target.title||(event.target.closest('[title]')||{}).title)||''></div>
